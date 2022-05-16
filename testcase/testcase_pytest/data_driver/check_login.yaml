@@ -1,0 +1,10 @@
+-
+  title: "检查用户是否登陆成功"
+  url: "/dc-wisdom-manager/web/auth/getLoginInfo"
+  method: "get"
+  headers:
+    Cookie: ${Cookie}
+    Authorization : ${Authorization}
+    Content-Type: "application/json;charset=UTF-8"
+
+

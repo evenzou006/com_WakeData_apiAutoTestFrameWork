@@ -1,0 +1,51 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 断言失败",
+      "children" : [ {
+        "name" : "错误密码登陆系统，预期：登陆失败",
+        "uid" : "9b905598f163c11a",
+        "parentUid" : "19135fd4a1c65086de1dc2a02ed9d4e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652668557971,
+          "stop" : 1652668558308,
+          "duration" : 337
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'title': '错误密码登陆系统，预期：登陆失败', 'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'method': 'post', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}}" ]
+      } ],
+      "uid" : "19135fd4a1c65086de1dc2a02ed9d4e0"
+    }, {
+      "name" : "AssertionError: assert 500 == 200",
+      "children" : [ {
+        "name" : "检查用户是否登陆成功",
+        "uid" : "5620edd9e7d4f68f",
+        "parentUid" : "02c5072e19457c72e6d75594e909a774",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652668558498,
+          "stop" : 1652668559542,
+          "duration" : 1044
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'title': '检查用户是否登陆成功', 'url': 'http://dc-sales.wakedata.com/dc-wisdom-manager/web/auth/getLoginInfo', 'method': 'get', 'headers': {'Cookie': '${Cookie}', 'Content-Type': 'application/json;charset=UTF-8'}}" ]
+      } ],
+      "uid" : "02c5072e19457c72e6d75594e909a774"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

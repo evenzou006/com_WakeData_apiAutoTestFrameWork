@@ -1,0 +1,168 @@
+{
+  "uid" : "9b905598f163c11a",
+  "name" : "错误密码登陆系统，预期：登陆失败",
+  "fullName" : "testcase.testcase_pytest.test_usermanage.TestUserManage#test_user_login",
+  "historyId" : "337c62d91bd826a0f9644315454cfc87",
+  "time" : {
+    "start" : 1652668557971,
+    "stop" : 1652668558308,
+    "duration" : 337
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 断言失败",
+  "statusTrace" : "self = <testcase.testcase_pytest.test_usermanage.TestUserManage object at 0x7feb8070f430>\ndata = {'body': {'identityType': 3, 'password': 'Poly123', 'username': 15012312313}, 'headers': {'Content-Type': 'application/json'}, 'method': 'post', 'title': '错误密码登陆系统，预期：登陆失败', ...}\n\n    @allure.story(\"用户管理\")\n    @pytest.mark.parametrize('data', (yaml_read_dict(pytest_datadriver_path+'TestUserManage.yaml'))['UserLogin'])\n    def test_user_login(self, data):\n        global Cookie   # 设置全局变量，实现接口依赖\n        allure.dynamic.title(data['title'])\n        # 拼接发送请求字典\n        request_data = {\n            'url': data['url'],\n            'headers': data['headers'],\n            'body': data['body']}\n        res = getattr(ApiKey(), data['method'].lower())(**request_data)  # 发送接口请求\n        if str(res.status_code)[0] in ('2', '3'):  # 判断状态码是否2或者3开头\n            log.info(f'请求发送成功，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                     f'状态码：{res.status_code},响应报文：{json.loads(res.text)}')\n            # Cookie = requests.utils.dict_from_cookiejar(res.cookies)  # 获取dict格式的cookie\n            Cookie = res.headers['Set-Cookie']  # 获取string格式的cookie\n            # print(f'Cookie={Cookie}')\n        else:\n            log.error(f'请求发送失败，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                      f'状态码：{res.status_code},响应报文：{res.text}')\n        try:\n>           assert request_data['body']['password'] == 'Poly123~'\nE           AssertionError: assert 'Poly123' == 'Poly123~'\nE             - Poly123~\nE             ?        -\nE             + Poly123\n\ntestcase/testcase_pytest/test_usermanage.py:38: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <testcase.testcase_pytest.test_usermanage.TestUserManage object at 0x7feb8070f430>\ndata = {'body': {'identityType': 3, 'password': 'Poly123', 'username': 15012312313}, 'headers': {'Content-Type': 'application/json'}, 'method': 'post', 'title': '错误密码登陆系统，预期：登陆失败', ...}\n\n    @allure.story(\"用户管理\")\n    @pytest.mark.parametrize('data', (yaml_read_dict(pytest_datadriver_path+'TestUserManage.yaml'))['UserLogin'])\n    def test_user_login(self, data):\n        global Cookie   # 设置全局变量，实现接口依赖\n        allure.dynamic.title(data['title'])\n        # 拼接发送请求字典\n        request_data = {\n            'url': data['url'],\n            'headers': data['headers'],\n            'body': data['body']}\n        res = getattr(ApiKey(), data['method'].lower())(**request_data)  # 发送接口请求\n        if str(res.status_code)[0] in ('2', '3'):  # 判断状态码是否2或者3开头\n            log.info(f'请求发送成功，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                     f'状态码：{res.status_code},响应报文：{json.loads(res.text)}')\n            # Cookie = requests.utils.dict_from_cookiejar(res.cookies)  # 获取dict格式的cookie\n            Cookie = res.headers['Set-Cookie']  # 获取string格式的cookie\n            # print(f'Cookie={Cookie}')\n        else:\n            log.error(f'请求发送失败，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                      f'状态码：{res.status_code},响应报文：{res.text}')\n        try:\n            assert request_data['body']['password'] == 'Poly123~'\n            assert res.status_code == 200\n            assert request_data['body']['username'] == 15012312313\n        except AssertionError as e:\n            log.error(f'断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username='\n                      f'{request_data[\"body\"][\"username\"]},password={request_data[\"body\"][\"password\"]}】')\n>           raise AssertionError('断言失败')\nE           AssertionError: 断言失败\n\ntestcase/testcase_pytest/test_usermanage.py:44: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "mysql_fix",
+    "time" : {
+      "start" : 1652668557966,
+      "stop" : 1652668557966,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token_fix",
+    "time" : {
+      "start" : 1652668557971,
+      "stop" : 1652668557971,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 断言失败",
+    "statusTrace" : "self = <testcase.testcase_pytest.test_usermanage.TestUserManage object at 0x7feb8070f430>\ndata = {'body': {'identityType': 3, 'password': 'Poly123', 'username': 15012312313}, 'headers': {'Content-Type': 'application/json'}, 'method': 'post', 'title': '错误密码登陆系统，预期：登陆失败', ...}\n\n    @allure.story(\"用户管理\")\n    @pytest.mark.parametrize('data', (yaml_read_dict(pytest_datadriver_path+'TestUserManage.yaml'))['UserLogin'])\n    def test_user_login(self, data):\n        global Cookie   # 设置全局变量，实现接口依赖\n        allure.dynamic.title(data['title'])\n        # 拼接发送请求字典\n        request_data = {\n            'url': data['url'],\n            'headers': data['headers'],\n            'body': data['body']}\n        res = getattr(ApiKey(), data['method'].lower())(**request_data)  # 发送接口请求\n        if str(res.status_code)[0] in ('2', '3'):  # 判断状态码是否2或者3开头\n            log.info(f'请求发送成功，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                     f'状态码：{res.status_code},响应报文：{json.loads(res.text)}')\n            # Cookie = requests.utils.dict_from_cookiejar(res.cookies)  # 获取dict格式的cookie\n            Cookie = res.headers['Set-Cookie']  # 获取string格式的cookie\n            # print(f'Cookie={Cookie}')\n        else:\n            log.error(f'请求发送失败，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                      f'状态码：{res.status_code},响应报文：{res.text}')\n        try:\n>           assert request_data['body']['password'] == 'Poly123~'\nE           AssertionError: assert 'Poly123' == 'Poly123~'\nE             - Poly123~\nE             ?        -\nE             + Poly123\n\ntestcase/testcase_pytest/test_usermanage.py:38: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <testcase.testcase_pytest.test_usermanage.TestUserManage object at 0x7feb8070f430>\ndata = {'body': {'identityType': 3, 'password': 'Poly123', 'username': 15012312313}, 'headers': {'Content-Type': 'application/json'}, 'method': 'post', 'title': '错误密码登陆系统，预期：登陆失败', ...}\n\n    @allure.story(\"用户管理\")\n    @pytest.mark.parametrize('data', (yaml_read_dict(pytest_datadriver_path+'TestUserManage.yaml'))['UserLogin'])\n    def test_user_login(self, data):\n        global Cookie   # 设置全局变量，实现接口依赖\n        allure.dynamic.title(data['title'])\n        # 拼接发送请求字典\n        request_data = {\n            'url': data['url'],\n            'headers': data['headers'],\n            'body': data['body']}\n        res = getattr(ApiKey(), data['method'].lower())(**request_data)  # 发送接口请求\n        if str(res.status_code)[0] in ('2', '3'):  # 判断状态码是否2或者3开头\n            log.info(f'请求发送成功，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                     f'状态码：{res.status_code},响应报文：{json.loads(res.text)}')\n            # Cookie = requests.utils.dict_from_cookiejar(res.cookies)  # 获取dict格式的cookie\n            Cookie = res.headers['Set-Cookie']  # 获取string格式的cookie\n            # print(f'Cookie={Cookie}')\n        else:\n            log.error(f'请求发送失败，用例名称：{data[\"title\"]},请求方法：{data[\"method\"]},请求参数：{request_data},'\n                      f'状态码：{res.status_code},响应报文：{res.text}')\n        try:\n            assert request_data['body']['password'] == 'Poly123~'\n            assert res.status_code == 200\n            assert request_data['body']['username'] == 15012312313\n        except AssertionError as e:\n            log.error(f'断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username='\n                      f'{request_data[\"body\"][\"username\"]},password={request_data[\"body\"][\"password\"]}】')\n>           raise AssertionError('断言失败')\nE           AssertionError: 断言失败\n\ntestcase/testcase_pytest/test_usermanage.py:44: AssertionError",
+    "steps" : [ {
+      "name" : "发送post请求",
+      "time" : {
+        "start" : 1652668557971,
+        "stop" : 1652668558301,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://dc-sales.wakedata.com/p/unified/login/login'"
+      }, {
+        "name" : "body",
+        "value" : "{'username': 15012312313, 'password': 'Poly123', 'identityType': 3}"
+      }, {
+        "name" : "headers",
+        "value" : "{'Content-Type': 'application/json'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "token_fix::0",
+    "time" : {
+      "start" : 1652668558367,
+      "stop" : 1652668558367,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_fix::0",
+    "time" : {
+      "start" : 1652668559553,
+      "stop" : 1652668559553,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用户管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.testcase_pytest"
+  }, {
+    "name" : "suite",
+    "value" : "test_usermanage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserManage"
+  }, {
+    "name" : "host",
+    "value" : "EvenZou-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "7560-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.testcase_pytest.test_usermanage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'title': '错误密码登陆系统，预期：登陆失败', 'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'method': 'post', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9b905598f163c11a.json",
+  "parameterValues" : [ "{'title': '错误密码登陆系统，预期：登陆失败', 'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'method': 'post', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}}" ]
+}

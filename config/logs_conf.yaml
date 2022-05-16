@@ -1,0 +1,12 @@
+# 日志模块配置信息
+log_config:                                   # 项目路径
+  log_level: 'DEBUG'                          # 日志打印级别
+  logs_path : '/logs/'                        # 日志存放路径
+  all_logname : 'stdout_{time:YYYY-MM}.log'   # 全局日志文件名
+  alllog_maxsize : '100 MB'                   # 全局日志单文件最大限制
+  date_logname : 'log_{time:YYYY-MM-DD}.log'  # 每天日志文件名
+  single_logname : 'log_{time:YYYY-MM-DD_HH:mm}.log'   # 单次运行日志文件名
+  datelog_starttime : '00:00'                 # 每天日志生成时间
+  error_logname : 'error_{time:YYYY-MM}.log'  # 错误日志文件
+  log_format : "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"  # 日志打印格式
+  log_savetime : '30 days'                    # 日志文件保留时长

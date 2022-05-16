@@ -1,0 +1,7 @@
+# mysql连接配置
+mysql_config:
+  host : '172.26.63.143'
+  port : 21536
+  user : 'root'
+  password : '0d2b028ee430e6bca89e2c661d035f7d' # aes密文
+  charset : 'utf8'

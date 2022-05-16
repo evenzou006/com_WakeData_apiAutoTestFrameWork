@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="4" time="0.080" timestamp="2022-04-26T18:26:34.908863" hostname="EvenZou-2.local"><testcase classname="test_pytest_base" name="test_01" time="0.001"><failure message="assert 1 == 2">def test_01():
+        print("\n测试用例01")
+&gt;       assert 1 == 2
+E       assert 1 == 2
+
+test_pytest_base.py:38: AssertionError</failure></testcase><testcase classname="test_pytest_base" name="test_02" time="0.001"><failure message="assert 1 != 1">def test_02():
+        print("\n测试用例02")
+&gt;       assert 1 != 1
+E       assert 1 != 1
+
+test_pytest_base.py:43: AssertionError</failure></testcase><testcase classname="test_pytest_base" name="test_03" time="0.001" /><testcase classname="test_pytest_base" name="test_04" time="0.000" /></testsuite></testsuites>

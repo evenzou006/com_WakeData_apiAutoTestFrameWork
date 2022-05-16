@@ -1,0 +1,43 @@
+
+2022-05-16 18:44:09 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:44:09)======
+2022-05-16 18:44:10 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 18:44:10 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-16 18:44:10 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 18:44:10 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 18:44:10 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-16 18:44:10 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=7fb2d8a4-9309-4f72-b4f0-d29bdb3966df; Domain=.wakedata.com; Path=/', 'Authorization': '87967688987', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 19:12:25 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:18:32 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:18:58 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:19:15 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:20:07 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:29:02 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:29:44 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:30:54 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:20 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:40 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:58 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 19:32:37 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 19:33:20 | INFO | 发送POST请求!!!请求参数= {"username": "admin", "password": "123456"},请求头及其他= {}
+2022-05-16 19:34:36 | INFO | 发送POST请求!!!请求参数= {"username": "admin", "password": "123456"},请求头及其他= {}
+2022-05-16 19:35:15 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:35:39 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:36:40 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:38:37 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:39:00 | INFO | 发送POST请求!!!请求参数= {"username": "admin", "password": "123456"},请求头及其他= {}
+2022-05-16 19:39:35 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:39:46 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': '{"username": "admin", "password": "123456"}'}
+2022-05-16 19:40:14 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:44:18 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 19:45:06 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:45:48 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': '{"username": "admin", "password": "123456"}'}
+2022-05-16 19:54:24 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:55:12 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:58:06 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:58:27 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 20:00:49 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 20:02:08 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 20:04:53 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {'headers': {'Content-Type': 'application/json;charset=UTF-8'}}
+2022-05-16 20:05:51 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'url': 'http://39.98.138.157:5000/api/login', 'body': {'username': 'admin', 'password': '123456'}}}
+2022-05-16 20:06:24 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 20:08:41 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}

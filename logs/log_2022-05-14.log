@@ -1,0 +1,8 @@
+
+2022-05-14 18:01:38 | INFO | ======开始执行本次用例(当前时间：2022-05-14_18:01:38)======
+2022-05-14 18:01:38 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 18:01:38 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文："{\n\t\"errorCode\":1002,\n\t\"errorMessage\":\"\u767b\u9646\u5931\u8d25\u6b21\u6570\u8fc7\u591a\uff01\",\n\t\"success\":false\n}"
+2022-05-14 18:01:38 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-14 18:01:38 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 18:01:38 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文："{\n\t\"errorCode\":1002,\n\t\"errorMessage\":\"\u767b\u9646\u5931\u8d25\u6b21\u6570\u8fc7\u591a\uff01\",\n\t\"success\":false\n}"
+2022-05-14 18:01:38 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=4eaccd6e-1eb3-4f1e-a5ae-7d631c883b64; Domain=.wakedata.com; Path=/', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}

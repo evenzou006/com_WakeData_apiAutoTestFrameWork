@@ -1,0 +1,162 @@
+2022-05-14 17:52:27 | INFO | ======开始执行本次用例(当前时间：2022-05-14_17:52:27)======
+2022-05-14 17:52:28 | INFO | 发送POST请求，请求参数：{'headers': {'Content-Type': 'application/json'}}
+2022-05-14 17:52:28 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{
+	"errorCode":1002,
+	"errorMessage":"登陆失败次数过多！",
+	"success":false
+}
+2022-05-14 17:52:28 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-14 17:52:29 | INFO | 发送POST请求，请求参数：{'headers': {'Content-Type': 'application/json'}}
+2022-05-14 17:52:29 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{
+	"errorCode":1002,
+	"errorMessage":"登陆失败次数过多！",
+	"success":false
+}
+2022-05-14 17:52:29 | INFO | 发送GET请求，请求参数{'headers': {'Cookie': 'djsid=475d49bb-837f-4e38-8f02-300e1dfe26dd; Domain=.wakedata.com; Path=/', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-14 17:54:29 | INFO | ======开始执行本次用例(当前时间：2022-05-14_17:54:29)======
+2022-05-14 17:54:29 | INFO | 发送POST请求，请求参数：{'username': 15012312313, 'password': 'Poly123', 'identityType': 3}
+2022-05-14 17:54:29 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{
+	"errorCode":1002,
+	"errorMessage":"登陆失败次数过多！",
+	"success":false
+}
+2022-05-14 17:54:29 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-14 17:54:29 | INFO | 发送POST请求，请求参数：{'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}
+2022-05-14 17:54:29 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{
+	"errorCode":1002,
+	"errorMessage":"登陆失败次数过多！",
+	"success":false
+}
+2022-05-14 17:54:29 | INFO | 发送GET请求，请求参数None
+2022-05-14 17:57:20 | INFO | ======开始执行本次用例(当前时间：2022-05-14_17:57:20)======
+2022-05-14 17:57:21 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 17:57:21 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{
+	"errorCode":1002,
+	"errorMessage":"登陆失败次数过多！",
+	"success":false
+}
+2022-05-14 17:57:21 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-14 17:57:22 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 17:57:22 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{
+	"errorCode":1002,
+	"errorMessage":"登陆失败次数过多！",
+	"success":false
+}
+2022-05-14 17:57:22 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=59f5818e-3045-4529-9f66-41a71ffdf3c7; Domain=.wakedata.com; Path=/', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-14 17:59:57 | INFO | ======开始执行本次用例(当前时间：2022-05-14_17:59:57)======
+2022-05-14 17:59:57 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 17:59:57 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-14 17:59:57 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-14 17:59:58 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 17:59:58 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-14 17:59:58 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=fc376f20-75b7-4026-a4dd-781e7fa59c53; Domain=.wakedata.com; Path=/', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-14 18:01:38 | INFO | ======开始执行本次用例(当前时间：2022-05-14_18:01:38)======
+2022-05-14 18:01:38 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 18:01:38 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文："{\n\t\"errorCode\":1002,\n\t\"errorMessage\":\"\u767b\u9646\u5931\u8d25\u6b21\u6570\u8fc7\u591a\uff01\",\n\t\"success\":false\n}"
+2022-05-14 18:01:38 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-14 18:01:38 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-14 18:01:38 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文："{\n\t\"errorCode\":1002,\n\t\"errorMessage\":\"\u767b\u9646\u5931\u8d25\u6b21\u6570\u8fc7\u591a\uff01\",\n\t\"success\":false\n}"
+2022-05-14 18:01:38 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=4eaccd6e-1eb3-4f1e-a5ae-7d631c883b64; Domain=.wakedata.com; Path=/', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 10:35:57 | INFO | ======开始执行本次用例(当前时间：2022-05-16_10:35:57)======
+2022-05-16 10:35:58 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 10:35:58 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 10:35:58 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 10:35:58 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 10:35:58 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 10:35:59 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=9071c76d-95df-4c42-936c-29d63896e014; Domain=.wakedata.com; Path=/, rememberMe=deleteMe; Path=/p; Max-Age=0; Expires=Sun, 15-May-2022 02:35:58 GMT', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 11:25:43 | INFO | ======开始执行本次用例(当前时间：2022-05-16_11:25:43)======
+2022-05-16 11:30:56 | INFO | ======开始执行本次用例(当前时间：2022-05-16_11:30:56)======
+2022-05-16 11:35:24 | INFO | ======开始执行本次用例(当前时间：2022-05-16_11:35:24)======
+2022-05-16 12:08:28 | INFO | ======开始执行本次用例(当前时间：2022-05-16_12:08:28)======
+2022-05-16 12:08:29 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:08:29 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:08:29 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:08:29 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:08:29 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:08:30 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=d1041614-bc44-4c4d-8251-ff12bee746ec; Domain=.wakedata.com; Path=/, rememberMe=deleteMe; Path=/p; Max-Age=0; Expires=Sun, 15-May-2022 04:08:29 GMT', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 12:09:01 | INFO | ======开始执行本次用例(当前时间：2022-05-16_12:09:01)======
+2022-05-16 12:09:03 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:09:03 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:09:03 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:09:03 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:09:03 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:09:03 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=65a300e8-1c75-4b80-8981-9a1315e0c2fc; Domain=.wakedata.com; Path=/, rememberMe=deleteMe; Path=/p; Max-Age=0; Expires=Sun, 15-May-2022 04:09:03 GMT', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 12:11:36 | INFO | ======开始执行本次用例(当前时间：2022-05-16_12:11:36)======
+2022-05-16 12:11:36 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:11:36 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:11:36 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:11:37 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:11:37 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:11:37 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=f5af3c5d-11f3-4869-bc9c-44fa9044a5b7; Domain=.wakedata.com; Path=/, rememberMe=deleteMe; Path=/p; Max-Age=0; Expires=Sun, 15-May-2022 04:11:37 GMT', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 12:12:06 | INFO | ======开始执行本次用例(当前时间：2022-05-16_12:12:06)======
+2022-05-16 12:12:07 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:12:07 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:12:07 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:12:07 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:12:07 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:12:07 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=0cf49ea7-3d69-4ccb-a583-706de2e04057; Domain=.wakedata.com; Path=/, rememberMe=deleteMe; Path=/p; Max-Age=0; Expires=Sun, 15-May-2022 04:12:07 GMT', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 12:12:38 | INFO | ======开始执行本次用例(当前时间：2022-05-16_12:12:38)======
+2022-05-16 12:12:39 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:12:39 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 110007, 'errorMessage': '用户名或密码错误', 'success': False}
+2022-05-16 12:12:39 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:12:39 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 12:12:39 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-16 12:12:39 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=46160a3c-8d2f-47d1-b2c0-ca1c80fd0bed; Domain=.wakedata.com; Path=/', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 14:49:03 | INFO | ======开始执行本次用例(当前时间：2022-05-16_14:49:03)======
+2022-05-16 14:49:03 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 14:49:03 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-16 14:49:03 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 14:49:04 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 14:49:04 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-16 14:49:04 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=06d80e30-7e19-440c-ac86-6d2aad6badf2; Domain=.wakedata.com; Path=/', 'Authorization': '87967688987', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 18:17:47 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:17:47)======
+2022-05-16 18:18:43 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:18:43)======
+2022-05-16 18:19:54 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:19:54)======
+2022-05-16 18:21:04 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:21:04)======
+2022-05-16 18:21:39 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:21:39)======
+2022-05-16 18:23:38 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:23:38)======
+2022-05-16 18:42:53 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:42:53)======
+2022-05-16 18:42:53 | ERROR | POST请求发送失败，失败原因：Invalid URL '/p/unified/login/login': No scheme supplied. Perhaps you meant http:///p/unified/login/login?
+2022-05-16 18:42:53 | ERROR | POST请求发送失败，失败原因：Invalid URL '/p/unified/login/login': No scheme supplied. Perhaps you meant http:///p/unified/login/login?
+2022-05-16 18:44:09 | INFO | ======开始执行本次用例(当前时间：2022-05-16_18:44:09)======
+2022-05-16 18:44:10 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 18:44:10 | INFO | 请求发送成功，用例名称：错误密码登陆系统，预期：登陆失败,请求方法：post,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-16 18:44:10 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 18:44:10 | INFO | 发送POST请求!!!请求参数= {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3},请求头及其他= {'headers': {'Content-Type': 'application/json'}}
+2022-05-16 18:44:10 | INFO | 请求发送成功，用例名称：正确账号密码登陆系统，预期：登陆成功,请求方法：POST,请求参数：{'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}},状态码：200,响应报文：{'errorCode': 1002, 'errorMessage': '登陆失败次数过多！', 'success': False}
+2022-05-16 18:44:10 | INFO | 发送GET请求!!!请求参数= None,请求头及其他= {'headers': {'Cookie': 'djsid=7fb2d8a4-9309-4f72-b4f0-d29bdb3966df; Domain=.wakedata.com; Path=/', 'Authorization': '87967688987', 'Content-Type': 'application/json;charset=UTF-8'}, 'timeout': 60}
+2022-05-16 19:12:25 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:18:32 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:18:58 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:19:15 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:20:07 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:29:02 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:29:44 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:30:54 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:20 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:40 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:58 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 19:32:37 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 19:33:20 | INFO | 发送POST请求!!!请求参数= {"username": "admin", "password": "123456"},请求头及其他= {}
+2022-05-16 19:34:36 | INFO | 发送POST请求!!!请求参数= {"username": "admin", "password": "123456"},请求头及其他= {}
+2022-05-16 19:35:15 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:35:39 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:36:40 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:38:37 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:39:00 | INFO | 发送POST请求!!!请求参数= {"username": "admin", "password": "123456"},请求头及其他= {}
+2022-05-16 19:39:35 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:39:46 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': '{"username": "admin", "password": "123456"}'}
+2022-05-16 19:40:14 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:44:18 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 19:45:06 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 19:45:48 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': '{"username": "admin", "password": "123456"}'}
+2022-05-16 19:54:24 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:55:12 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:58:06 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:58:27 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 20:00:49 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 20:02:08 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {}
+2022-05-16 20:04:53 | INFO | 发送POST请求!!!请求参数= {'username': 'admin', 'password': '123456'},请求头及其他= {'headers': {'Content-Type': 'application/json;charset=UTF-8'}}
+2022-05-16 20:05:51 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'url': 'http://39.98.138.157:5000/api/login', 'body': {'username': 'admin', 'password': '123456'}}}
+2022-05-16 20:06:24 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}
+2022-05-16 20:08:41 | INFO | 发送POST请求!!!请求参数= None,请求头及其他= {'json': {'username': 'admin', 'password': '123456'}}

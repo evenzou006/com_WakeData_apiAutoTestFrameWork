@@ -1,0 +1,20 @@
+2022-05-16 10:35:58 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:08:29 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:09:03 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:11:36 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:12:07 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 12:12:39 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 14:49:03 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 18:42:53 | ERROR | POST请求发送失败，失败原因：Invalid URL '/p/unified/login/login': No scheme supplied. Perhaps you meant http:///p/unified/login/login?
+2022-05-16 18:42:53 | ERROR | POST请求发送失败，失败原因：Invalid URL '/p/unified/login/login': No scheme supplied. Perhaps you meant http:///p/unified/login/login?
+2022-05-16 18:44:10 | ERROR | 断言失败！预期：【username=15012312313，password=Poly123~】，实际：【username=15012312313,password=Poly123】
+2022-05-16 19:29:02 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:29:44 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:30:54 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:20 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:31:40 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:39:35 | ERROR | POST请求发送失败，失败原因：requests.api.post() got multiple values for keyword argument 'data'
+2022-05-16 19:54:24 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:55:12 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:58:06 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'
+2022-05-16 19:58:27 | ERROR | POST请求发送失败，失败原因：request() got multiple values for argument 'method'

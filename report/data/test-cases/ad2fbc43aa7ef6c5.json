@@ -1,0 +1,160 @@
+{
+  "uid" : "ad2fbc43aa7ef6c5",
+  "name" : "正确账号密码登陆系统，预期：登陆成功",
+  "fullName" : "testcase.testcase_pytest.test_usermanage.TestUserManage#test_user_login",
+  "historyId" : "2a53bd1203fb2355d2dca6e4de71f9db",
+  "time" : {
+    "start" : 1652668558369,
+    "stop" : 1652668558491,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "mysql_fix",
+    "time" : {
+      "start" : 1652668557966,
+      "stop" : 1652668557966,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token_fix",
+    "time" : {
+      "start" : 1652668558368,
+      "stop" : 1652668558369,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送post请求",
+      "time" : {
+        "start" : 1652668558369,
+        "stop" : 1652668558490,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'http://dc-sales.wakedata.com/p/unified/login/login'"
+      }, {
+        "name" : "body",
+        "value" : "{'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}"
+      }, {
+        "name" : "headers",
+        "value" : "{'Content-Type': 'application/json'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "token_fix::0",
+    "time" : {
+      "start" : 1652668558492,
+      "stop" : 1652668558493,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mysql_fix::0",
+    "time" : {
+      "start" : 1652668559553,
+      "stop" : 1652668559553,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用户管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.testcase_pytest"
+  }, {
+    "name" : "suite",
+    "value" : "test_usermanage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserManage"
+  }, {
+    "name" : "host",
+    "value" : "EvenZou-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "7560-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.testcase_pytest.test_usermanage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'title': '正确账号密码登陆系统，预期：登陆成功', 'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'method': 'POST', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad2fbc43aa7ef6c5.json",
+  "parameterValues" : [ "{'title': '正确账号密码登陆系统，预期：登陆成功', 'url': 'http://dc-sales.wakedata.com/p/unified/login/login', 'method': 'POST', 'headers': {'Content-Type': 'application/json'}, 'body': {'username': 15012312313, 'password': 'Poly123~', 'identityType': 3}}" ]
+}

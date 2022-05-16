@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="13" time="0.295" timestamp="2022-05-05T18:36:14.258286" hostname="EvenZou-2.local"><testcase classname="test_fixtrue_demo" name="test_08" time="0.002" /><testcase classname="test_pytest_base" name="test_01" time="0.001" /><testcase classname="test_pytest_base" name="test_02" time="0.001"><failure message="AssertionError: 断言失败">@pytest.mark.happy
+    def test_02():
+        try:
+            print("\n测试用例02，标签happy")
+&gt;           assert 1 != 1
+E           assert 1 != 1
+
+test_pytest_base.py:119: AssertionError
+
+During handling of the above exception, another exception occurred:
+
+    @pytest.mark.happy
+    def test_02():
+        try:
+            print("\n测试用例02，标签happy")
+            assert 1 != 1
+        except AssertionError:
+&gt;           raise AssertionError("断言失败")
+E           AssertionError: 断言失败
+
+test_pytest_base.py:121: AssertionError</failure></testcase><testcase classname="test_pytest_base" name="test_03" time="0.001" /><testcase classname="test_pytest_base" name="test_04" time="0.002"><failure message="AssertionError: 断言失败">@pytest.mark.happy
+    def test_04():
+        try:
+            print("\n测试用例04，标签happy")
+&gt;           assert '3' not in '123'
+E           AssertionError: assert '3' not in '123'
+E             '3' is contained here:
+E               123
+E             ?   +
+
+test_pytest_base.py:134: AssertionError
+
+During handling of the above exception, another exception occurred:
+
+    @pytest.mark.happy
+    def test_04():
+        try:
+            print("\n测试用例04，标签happy")
+            assert '3' not in '123'
+        except AssertionError:
+&gt;           raise AssertionError("断言失败")
+E           AssertionError: 断言失败
+
+test_pytest_base.py:136: AssertionError</failure></testcase><testcase classname="test_pytest_base" name="test_05[10]" time="0.001"><failure message="AssertionError: 断言失败">a = 10
+
+    @pytest.mark.smoke
+    @pytest.mark.parametrize('a', [10, 20])
+    def test_05(a):
+        try:
+            print(f'a={a}')
+            re = a-15
+&gt;           assert re &gt; 0
+E           assert -5 &gt; 0
+
+test_pytest_base.py:145: AssertionError
+
+During handling of the above exception, another exception occurred:
+
+a = 10
+
+    @pytest.mark.smoke
+    @pytest.mark.parametrize('a', [10, 20])
+    def test_05(a):
+        try:
+            print(f'a={a}')
+            re = a-15
+            assert re &gt; 0
+        except AssertionError:
+&gt;           raise AssertionError("断言失败")
+E           AssertionError: 断言失败
+
+test_pytest_base.py:147: AssertionError</failure></testcase><testcase classname="test_pytest_base" name="test_05[20]" time="0.001" /><testcase classname="test_pytest_base" name="test_06[\u5f20\u4e09-qaz123]" time="0.001" /><testcase classname="test_pytest_base" name="test_06[\u674e\u56db-wsx123]" time="0.001" /><testcase classname="test_pytest_base" name="test_06[\u738b\u4e94-edc123]" time="0.001" /><testcase classname="test_pytest_base" name="test_07" time="0.001" /><testcase classname="pytest_allure_install.test_allure.TestEditPage" name="test_01" time="0.003"><failure message="AssertionError: 断言失败">self = &lt;common.demo_pytest.pytest_allure_install.test_allure.TestEditPage object at 0x7fe74e4af220&gt;
+
+    @allure.step("执行登陆用例")
+    def test_01(self):
+        step_01()
+        step_02()
+        try:
+&gt;           assert step_01() == 'joo'
+E           AssertionError: assert 'jojo' == 'joo'
+E             - joo
+E             + jojo
+E             ?   +
+
+pytest_allure_install/test_allure.py:26: AssertionError
+
+During handling of the above exception, another exception occurred:
+
+self = &lt;common.demo_pytest.pytest_allure_install.test_allure.TestEditPage object at 0x7fe74e4af220&gt;
+
+    @allure.step("执行登陆用例")
+    def test_01(self):
+        step_01()
+        step_02()
+        try:
+            assert step_01() == 'joo'
+        except AssertionError:
+            log.error(f"断言失败！预期结果：【joo】与实际结果：【{step_01()}】不符")
+&gt;           raise AssertionError("断言失败")
+E           AssertionError: 断言失败
+
+pytest_allure_install/test_allure.py:29: AssertionError</failure></testcase><testcase classname="pytest_allure_install.test_allure.TestEditPage" name="test_02" time="0.001" /></testsuite></testsuites>

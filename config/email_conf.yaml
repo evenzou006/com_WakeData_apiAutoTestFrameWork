@@ -1,0 +1,4 @@
+# 发送邮箱
+email_conf:
+    send_email : ''
+    password : ''

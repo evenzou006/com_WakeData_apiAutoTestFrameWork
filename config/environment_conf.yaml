@@ -1,0 +1,8 @@
+dev_host: &dev_host 'http://'  # 开发环境
+sit_host: &sit_host 'http://dc-sales.wakedata.com'  # 测试环境
+uat_host: &uat_host 'http://'  # 用户验收环境
+pre_host: &pre_host 'http://'  # 灰度环境
+pet_host: &pet_host 'http://'  # 性能测试环境
+pro_host: &pro_host 'http://'  # 生产环境
+
+run_host: *sit_host  # 当前运行的环境
